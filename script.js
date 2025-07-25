@@ -33,7 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
             full: 'images/girl4.webp',
             description: 'Girl 4 bio',
             category: 'main-girls' // <-- ADD THIS CATEGORY
+        },
+        {
+            id: 5,
+            name: 'Girl5',
+            thumbnail: 'images/MGF1.webp',
+            full: 'images/MGF1.webp',
+            description: 'Girl 5 bio',
+            category: 'main-girls-friends' // <-- ADD THIS CATEGORY
         }
+
         // Add more images here, each with its appropriate 'category'
     ];
 
