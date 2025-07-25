@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = [
         {
             id: 1,
-            name: 'Mountain View',
-            thumbnail: 'images/mountain_thumb.jpg',
-            full: 'images/mountain_full.jpg',
-            description: 'A serene view of majestic mountains under a clear sky.'
+            name: 'Maci Hoes',
+            thumbnail: 'images/girl1.webp',
+            full: 'images/girl1.webp',
+            description: 'First girl bio'
         },
         {
             id: 2,
