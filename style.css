@@ -76,7 +76,7 @@ h1 {
 
 /* View Page Styling */
 .view-container {
-    text-align: center;
+    text-align: center; /* This centers the H1, P, and back button */
 }
 
 .back-button {
@@ -95,18 +95,26 @@ h1 {
 }
 
 .full-image-wrapper {
-    max-width: 900px;
+    /* No max-width here if you want original size, but keeping it can be good for very large images */
+    /* max-width: 900px; */
     margin: 20px auto;
     border: 1px solid #ddd;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    overflow: hidden;
+    overflow: auto; /* Allow scroll if image is larger than wrapper */
+
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center (if wrapper has height) */
+    min-height: 200px; /* Optional: give wrapper a min-height for vertical centering effect */
 }
 
 #full-image {
-    max-width: 100%;
+    /* Removed max-width: 100% to allow original size */
     height: auto;
-    display: block;
+    display: block; /* Ensures proper centering within flex container */
+    margin: 0; /* Remove any default margins that might interfere */
 }
 
 #image-title {
@@ -114,8 +122,6 @@ h1 {
     color: #0056b3;
     margin-top: 20px;
 }
-
-/* Add this to your style.css file */
 
 .image-description {
     margin-top: 15px;
