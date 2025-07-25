@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 3,
-            name: 'Girl3',
+            name: 'Allison',
             thumbnail: 'images/girl3.webp',
             full: 'images/girl3.webp',
-            description: 'Girl 3 bio'
+            description: 'Allison is in the eighth grade and became a John Adams Academy scholar in the 2019-2020 school year. “In my year at John Adams Academy, I have learned more about scholar empowered learning than ever, and that is why it is my favorite of the Core Values. A scholar is a person who takes charge of their learning and goes the extra mile. When the world falls apart the people who understand scholar empowered learning are able to continue and organize their education. This doesn’t work for others because they expect it to be done for them.” When it comes to a classical education, Allison said, “I get to learn all about truth and make interpretations for myself. I like that every English lesson has a little bit of Latin or History in it. Since I started at John Adams Academy a year ago I feel like I finally understand the scholar mentality, and I’m very grateful that I do.” Allison’s family chose a classical education for their scholar because they believe in rational thought, and that all things should be seen through the context of history. “John Adams Academy’s Core Values help guide and shape scholars into strong servant leaders, and we look forward to our child finding her place in the world with that mindset.” Thank you for sharing your story with us.'
         },
         {
             id: 4,
