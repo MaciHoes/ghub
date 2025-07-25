@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 2,
-            name: 'Forest Path',
-            thumbnail: 'images/forest_thumb.jpg',
-            full: 'images/forest_full.jpg',
-            description: 'A winding path leading deep into a lush, green forest.'
+            name: 'Girl1 and Girl 2',
+            thumbnail: 'images/girl2.webp',
+            full: 'images/girl2.webp',
+            description: 'Girls bio'
         },
         {
             id: 3,
