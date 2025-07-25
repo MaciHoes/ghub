@@ -17,17 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 3,
-            name: 'City Lights',
-            thumbnail: 'images/city_thumb.jpg',
-            full: 'images/city_full.jpg',
-            description: 'The vibrant and sprawling lights of a bustling city at night.'
+            name: 'Girl3',
+            thumbnail: 'images/girl3.webp',
+            full: 'images/girl3.webp',
+            description: 'Girl 3 bio'
         },
         {
             id: 4,
             name: 'Ocean Sunset',
-            thumbnail: 'images/ocean_thumb.jpg',
-            full: 'images/ocean_full.jpg',
-            description: 'A breathtaking sunset over the calm, endless ocean.'
+            thumbnail: 'images/girl4.webp',
+            full: 'images/girl4.webp',
+            description: 'Girl 4 bio'
         }
     ];
 
