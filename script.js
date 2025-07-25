@@ -1,15 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Define your images here. Add more objects for more images.
     const images = [
-        { id: 1, name: 'Mountain View', thumbnail: 'images/mountain_thumb.jpg', full: 'images/mountain_full.jpg' },
-        { id: 2, name: 'Forest Path', thumbnail: 'images/forest_thumb.jpg', full: 'images/forest_full.jpg' },
-        { id: 3, name: 'City Lights', thumbnail: 'images/city_thumb.jpg', full: 'images/city_full.jpg' },
-        { id: 4, name: 'Ocean Sunset', thumbnail: 'images/ocean_thumb.jpg', full: 'images/ocean_full.jpg' }
+        {
+            id: 1,
+            name: 'Mountain View',
+            thumbnail: 'images/mountain_thumb.jpg',
+            full: 'images/mountain_full.jpg',
+            description: 'A serene view of majestic mountains under a clear sky.'
+        },
+        {
+            id: 2,
+            name: 'Forest Path',
+            thumbnail: 'images/forest_thumb.jpg',
+            full: 'images/forest_full.jpg',
+            description: 'A winding path leading deep into a lush, green forest.'
+        },
+        {
+            id: 3,
+            name: 'City Lights',
+            thumbnail: 'images/city_thumb.jpg',
+            full: 'images/city_full.jpg',
+            description: 'The vibrant and sprawling lights of a bustling city at night.'
+        },
+        {
+            id: 4,
+            name: 'Ocean Sunset',
+            thumbnail: 'images/ocean_thumb.jpg',
+            full: 'images/ocean_full.jpg',
+            description: 'A breathtaking sunset over the calm, endless ocean.'
+        }
     ];
 
     const imageGrid = document.getElementById('image-grid');
     const fullImage = document.getElementById('full-image');
     const imageTitle = document.getElementById('image-title');
+    const imageDescription = document.getElementById('image-description'); // Get the new description element
 
     // --- Logic for index.html ---
     if (imageGrid) {
@@ -29,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Logic for view.html ---
-    if (fullImage && imageTitle) {
+    if (fullImage && imageTitle && imageDescription) { // Check for the description element too
         const urlParams = new URLSearchParams(window.location.search);
         const imageId = parseInt(urlParams.get('id'));
 
@@ -39,12 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 fullImage.src = selectedImage.full;
                 fullImage.alt = selectedImage.name;
                 imageTitle.textContent = selectedImage.name;
+                imageDescription.textContent = selectedImage.description; // Set the description
             } else {
                 imageTitle.textContent = 'Image Not Found';
+                imageDescription.textContent = 'The requested image could not be found.'; // Default description
                 fullImage.src = ''; // Clear image source
             }
         } else {
             imageTitle.textContent = 'No Image Selected';
+            imageDescription.textContent = 'Please select an image from the gallery.'; // Default description
             fullImage.src = ''; // Clear image source
         }
     }
